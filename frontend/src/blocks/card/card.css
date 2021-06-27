@@ -1,0 +1,9 @@
+.card {
+  box-sizing: border-box;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: aliceblue;
+  max-width: 280px;
+  position: relative;
+}
