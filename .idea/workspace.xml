@@ -11,10 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="619524b4-cb5b-4a6f-85e6-46fe2b248f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625170962584</updated>
       <workItem from="1625170963849" duration="1191000" />
-      <workItem from="1625180264205" duration="1193000" />
+      <workItem from="1625180264205" duration="1385000" />
     </task>
     <servers />
   </component>
