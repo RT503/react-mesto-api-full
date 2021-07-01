@@ -1,0 +1,15 @@
+.card__image {
+  height: 282px;
+  width: 282px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: bottom;
+  object-fit: cover;
+  object-position: center;
+  color: black;
+}
+
+.card__image:hover {
+  opacity: 0.6;
+  transition: all 0.5s linear;
+}

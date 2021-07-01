@@ -1,0 +1,6 @@
+.card__bottom-section {
+  display: flex;
+  justify-content: space-between;
+  width: 246px;
+  margin: 0 auto;
+}
