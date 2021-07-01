@@ -5,6 +5,8 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const rateLimit = require('express-rate-limit');
+const helmet = require('helmet');
 const { errors } = require('celebrate');
 const { requestLogger, errorLogger } = require('./middlewares/Logger');
 
@@ -12,6 +14,11 @@ const router = require('./routes/index');
 
 const errorHandler = require('./middlewares/errorHandler');
 const NotFoundError = require('./errors/not-found-err');
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+});
 
 const {
   PORT = 3000,
@@ -32,6 +39,8 @@ const corsConfig = {
   credentials: true,
 };
 
+app.use(helmet());
+app.use(limiter);
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -52,6 +61,4 @@ app.use(errorLogger);
 app.use(errors());
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
-});
+app.listen(PORT);
